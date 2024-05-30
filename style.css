@@ -1,0 +1,3163 @@
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+.container{
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 115vh;
+}
+
+.background-video{
+    position: absolute;
+    width: 100%;
+    z-index: -1;   
+}
+header img{
+    width: 130px;
+    height: 130px;
+   
+}
+.top-nav h1{
+    margin: 0;
+    color: #fff;
+    font-size: 30px;   
+}
+.top-nav{
+    background-color: transparent;   
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* position: fixed; */
+   transition: 0.5s;
+   font-family: "Roboto", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+}
+.top-nav .Real_nav{
+   display: block;
+}
+.Hide_icon{
+   display: none;
+  
+}
+.top-nav nav ul{
+      list-style: none;
+      
+}
+.top-nav nav ul li{
+    display: flex;
+    float: left;
+    margin-left: 3rem;
+}
+.top-nav nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 4rem;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.7s;
+}
+.top-nav nav ul li a:hover{
+    color:red;
+    /* background-color: red; */
+    /* padding: 10px; */
+    border-radius: 25px;
+    transform: scale(1);
+    transition: .6rem;
+}
+.top-nav .active::after{
+    content: "";
+    width: 100%;
+    background-color: red;
+    height: 2px;
+    display: block;
+    top: 0;
+    
+}
+.top-nav2 .active::after{
+    content: "";
+    width: 100%;
+    background-color: #fff;
+    height: 2.5px;
+    display: block;
+    top: 0;
+    
+}
+.top-nav2 h1{
+    margin: 0;
+    color: red;
+    font-size: 30px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    
+}
+.top-nav2{
+    background-color: #222223;   
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* position: fixed; */
+   transition: 0.5s;
+}
+.top-nav2 .Real_nav {
+    display: block;
+}
+.top-nav2 nav ul{
+      list-style: none;
+      
+}
+.top-nav2 nav ul li{
+    display: flex;
+    float: left;
+    /* margin-left: 3rem; */
+}
+.top-nav2 nav ul li a{
+    color: red;
+   
+    text-decoration: none;
+    margin-right: 4rem;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.top-nav2 nav ul li a:hover{
+    color:white;
+    /* background-color: red; */
+    /* padding: 10px; */
+    border-radius: 25px;
+    transform: scale(1);
+}
+
+.Hide_nav{
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 400px;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+   display: none;
+   transition: all 2s ease ;
+   
+    
+}
+.Hide_nav ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.Hide_nav ul .nav-link{
+    width: 100% ;
+    padding: .9rem  0 ;
+    color: white;
+    text-decoration: none;
+    
+}
+.Hide_nav ul .active{
+    width: 100%;
+    background-color: red;
+   
+    display: block;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.julies-luxury-logo{
+    
+    left: 0;
+    top: 5rem;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.julies-luxury-logo .quote-text{
+    font-size: 4rem;
+  
+}
+.julies-luxury-logo .quote-text .lux{
+    color: red;
+}
+.float-icon{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-items: baseline;
+    align-items: baseline;
+    position: relative;
+    left: 9rem;
+    top: 7rem;
+
+}
+.float-icon i{
+    color: white;
+   margin: auto;
+}
+
+   
+
+.julies-luxury-logo q{
+    font-size: 50px;
+    color: #fff;
+}
+.btn{
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    
+}
+.btn button{
+
+   text-decoration: none;
+    margin-top: 2rem;
+    width: 350px;
+    height: 50px;
+    border: none; 
+    border-radius: 25px;
+   
+    outline: none;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    transition: 0.7;
+    font-weight: 700;
+}
+.julies-luxury-logo q{
+    font-size: 50px;
+    color: red;
+}
+.julies-luxury-logo q .quote-text{
+    color: white;
+}
+
+.btn button:hover{
+    background-color: transparent;
+    color: red;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid  white;
+    border-radius: 25px;
+}
+
+
+
+.grid-section{
+     background-color: #222223;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    height: 370vh; 
+    gap: 2rem;
+    padding: 5rem 3rem 3rem;
+}
+.car1{
+    background-image: url(./image/pexels-zsolt-joo-2882234.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+     grid-column: 1;
+     grid-row: 1 / span 3; 
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+.car1:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car1 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car1 span:hover::before{
+    width: 100%;
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car1 span::after{
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car1  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+
+
+
+
+.car2{
+    background-image: url(./image/pexels-mike-bird-810357.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     grid-column: 2 / span 2;
+     grid-row: 3 / span 3;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car2:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car2 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car2 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car2 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car2  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car2 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+
+.car3{
+    background-image: url(./image/pexels-sevenstorm-juhaszimrus-575386.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+     grid-column: 2;
+     grid-row: 1 / span 2;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car3:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car3 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car3 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car3 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car3  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car3 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.car4{
+    background-image: url(./image/pexels-alexgtacar-1592384.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+     grid-column: 3;
+     grid-row: 1 / span 2;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car4:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car4 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car4 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car4 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car4  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car4 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.car5{
+    background-image: url(./image/pexels-lloyd-freeman-1429775.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     grid-column: 1 /span 2;
+     grid-row: 6 /span 2 ;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car5:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car5 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car5 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car5 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car5  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car5 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.car6{
+    background-image: url(./image/pexels-johnmark-smith-253096.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     grid-column: 2 ;
+     grid-row: 8 / span 2;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car6:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car6 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car6 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car6 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car6  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car6 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.car7{
+    background-image: url(./image/pexels-jose-mueses-1280560.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     grid-row: 4 / span 2;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car7:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car7 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car7 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car7 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car7  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car7 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.car8{
+    background-image: url(./image/pexels-prateek-katyal-2694389.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     grid-column: 3;
+     grid-row: 6 / span 3;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car8:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car8 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car8 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car8 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car8  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car8 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.car9{
+    background-image: url(./image/hincas\ car.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+     grid-column: 1 / span 2;
+     grid-row: 12 / span 2;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car9:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car9 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car9 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car9 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car9  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car9 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.car10{
+    background-image: url(./image/pexels-jan-kopřiva-3399938.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+     grid-column: 1;
+     grid-row: 9 / span 3;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car10:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car10 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car10 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car10 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car10  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car10 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.car11{
+    background-image: url(./image/2\ olav-tvedt--oVaYMgBMbs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+     grid-column: 3;
+     grid-row: 9 / span 3;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car11:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car11 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car11 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car11 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car11  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car11 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.car12{
+    background-image: url(./image/2\ campbell-3ZUsNJhi_Ik-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+     grid-column: 1;
+     grid-row: 8;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car12:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car12 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car12 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car12 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car12  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car12 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.car13{
+    background-image: url(./image/99-best-luxury-cars-2023-bmw-i7-lead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     grid-column: 2;
+     grid-row: 10 / span 2;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+}
+
+.car13:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car13 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car13 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car13 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car13  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car13 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.car14{
+    background-image: url(./image/2\ joey-banks-YApiWyp0lqo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     grid-column: 3;
+     grid-row: 12 / span 2;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car14:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car14 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car14 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car14 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car14  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car14 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+
+}
+.footer{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 35% 25% 20% 20% ;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 50vh;
+    background-color: #222223;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  
+}
+.footer-location {
+     color: white;
+     margin: 0;
+    padding-left: 7rem;
+     align-items: center;
+
+}
+.footer-location p{
+    text-align: left;
+    font-size: 13px;
+}
+.footer-location p a{
+    text-decoration: none;
+    color: white;
+
+}
+.footer-location p a:hover{
+    color:  red;
+}
+.footer-location .location{
+    line-height: 30px;
+}
+.footer-location .location address{
+    line-height: 20px;
+}
+.footer-location .location a{
+    color: #fff;
+    text-decoration: none;
+}   
+.footer-location .location a:hover{
+    color: red;
+}
+.footer-location .location h5{
+    margin: 0;
+}
+.footer-icon{
+    text-align: left;
+    /* display: flex; */
+   flex-direction: column;
+  justify-content: left;
+}
+
+.footer-icon h3{
+   display: inline-block;
+   margin: 0;
+   text-align: center;
+   color: white;
+   position: relative;
+   padding: 0;
+   
+}
+.footer-icon h3::before{
+    content: "";
+    width: 100%;
+    background-color: red;
+    height: 2px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transform: scale(1, 1);
+    transition: transform 0.74s ease-out;
+}
+.footer-icon h3:hover::before{
+    transform: scale(0, 1);
+}
+.footer-icon h3:hover{
+    display: inline-block;
+    color: red;
+}
+
+.footer ul{
+    padding: 0;
+}
+.footer-icon li{
+    list-style-type: none;
+    float: left;
+    margin: 0 2rem 0 0;
+    padding: 0;
+    transition: 0.9s;
+   
+}
+.footer-icon li:hover{
+    transform: translateY(-10px);
+}
+
+.footer-icon li a {
+    color: white;
+    font-size: xx-large;
+    transition: 0.9s;
+}
+.footer-icon li a:hover{
+    color: red;
+}
+.footer-company{
+    margin: 0;
+    padding: 0;
+
+}
+.footer-company h3{
+    color: white;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+}
+.footer-company h3:hover{
+    color: red;
+}
+.footer-company h3::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    background-color:red;
+    height: 2px;
+  transform: scale(1, 1);
+  transition: transform 0.74s ease-out;
+}
+.footer-company h3:hover::before{
+    transform: scale(0, 1);
+}
+
+
+.footer-company ul{
+  margin-right: 4rem;
+      padding: 0;
+}
+
+.footer-company li{
+    list-style-type: none;
+   transition: 1s;
+}
+.footer-company li:hover{
+     transform: translateX(10px);
+}
+.footer-company li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+   
+}
+.footer-company li a:hover{
+    color: red;
+   
+    
+}
+
+.footer-get-help{
+    margin: 0;
+    padding-right: 7rem;
+
+}
+.footer-get-help h3{
+    color: white;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+}
+.footer-get-help h3:hover{
+    color: red;
+
+}
+.footer-get-help h3::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    background-color:red;
+    height: 2px;
+    transform: scale(1, 1);
+    transition: transform .74s ease-out;
+    
+}
+.footer-get-help h3:hover::before{
+    transform: scale(0, 1);
+   
+}
+   
+.footer-get-help ul{
+  margin-right: 4rem;
+      padding: 0;
+}
+
+.footer-get-help li{
+    list-style-type: none;
+    transition: 1s;
+   
+}
+.footer-get-help li:hover{
+   transform: translateX(10px);
+}
+.footer-get-help li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+   
+}
+.footer-get-help li a:hover{
+    color: red;
+    
+}
+.footer-copyright{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    color: #fff; 
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+@media screen and (max-width: 767px){
+    
+.container{
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.background-video{
+    position: absolute;
+    width: 100%;
+    z-index: -1;   
+}
+header img{
+    width: 60px;
+    height: 60px;
+   
+}
+.top-nav h1{
+    margin: 0;
+    color: #fff;
+    font-size: 10px;   
+}
+.top-nav{
+    background-color: transparent;   
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   /* position: fixed; */
+   transition: 0.5s;
+   font-family: "Roboto", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+}
+.top-nav .Real_nav{
+    display: none;
+}
+.top-nav nav ul{
+      list-style: none;
+      
+}
+.top-nav nav ul li{
+    display: flex;
+    float: left;
+    margin-left: .7rem;
+}
+
+.top-nav nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: 600;
+    font-size: 10px;
+    transition: 0.7s;
+}
+
+.top-nav nav ul li a:hover{
+    color:red;
+    /* background-color: red; */
+    /* padding: 10px; */
+    border-radius: 25px;
+    transform: scale(1);
+    transition: .6rem;
+}
+.top-nav .active::after{
+    content: "";
+    width: 100%;
+    background-color: red;
+    height: 2px;
+    display: block;
+    top: 0;
+    
+}
+.top-nav2 .active::after{
+    display: none;
+    content: "";
+    width: 100%;
+    background-color: #fff;
+    height: 2.5px;
+    top: 0;
+    
+}
+.top-nav2 h1{
+    margin: 0;
+    color: #fff;
+    font-size: 10px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    
+}
+.top-nav2{
+    background-color: #222223;   
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* position: fixed; */
+   transition: 0.5s;
+}
+.top-nav2 .Real_nav{
+    display: none;
+}
+.top-nav2 nav ul{
+      list-style: none;
+      
+}
+.top-nav2 nav ul li{
+    display: flex;
+    float: left;
+    /* margin-left: 3rem; */
+}
+.top-nav2 nav ul li a{
+    color: #fff;
+   
+    text-decoration: none;
+    margin-right: 4rem;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.top-nav2 nav ul li a:hover{
+    color:white;
+    /* background-color: red; */
+    /* padding: 10px; */
+    border-radius: 25px;
+    transform: scale(1);
+}
+   
+
+
+.julies-luxury-logo{
+    
+    left: 0;
+    top: 5rem;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.julies-luxury-logo .quote-text{
+    font-size: 1rem;
+  
+}
+.julies-luxury-logo .quote-text .lux{
+    color: red;
+}
+.float-icon{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-items: baseline;
+    align-items: baseline;
+    position: relative;
+    left: 9rem;
+    top: 7rem;
+
+}
+.float-icon i{
+    color: white;
+   margin: auto;
+}
+
+   
+
+.julies-luxury-logo q{
+    font-size: 20px;
+    color: #fff;
+}
+.btn{
+    position: relative;
+    text-align: center;
+    bottom: 1rem;
+    
+}
+.btn button{
+
+   text-decoration: none;
+    margin-top: 2rem;
+    width: 90px;
+    height: 20px;
+    border: none; 
+    border-radius: 25px;
+   
+    outline: none;
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    transition: 0.7;
+    font-weight: 700;
+}
+.julies-luxury-logo q{
+    font-size: 20px;
+    color: red;
+}
+.julies-luxury-logo q .quote-text{
+    color: white;
+}
+
+.btn button:hover{
+    background-color: transparent;
+    color: red;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid  white;
+    border-radius: 25px;
+}
+
+
+
+.grid-section{
+     background-color: #222223;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    height: 370vh; 
+    gap: .5rem;
+    padding: 5rem 1rem 2rem;
+    font-size: 10px;
+}
+.car1{
+    background-image: url(./image/pexels-zsolt-joo-2882234.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+    grid-column: 1/ span 3;
+    grid-row: 3 / span 2;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+.car1:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car1 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car1 span:hover::before{
+    width: 100%;
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car1 span::after{
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car1  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+
+
+
+.car2{
+    background-image: url(./image/pexels-mike-bird-810357.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     grid-column: 1 / span 3;
+     grid-row: 2 / span 1;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car2:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car2 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car2 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car2 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car2  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car2 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.car3{
+    background-image: url(./image/pexels-sevenstorm-juhaszimrus-575386.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+     grid-column: 1/ span 3;
+     grid-row: 1 / span 1;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car3:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car3 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car3 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car3 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car3  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car3 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.car4{
+    background-image: url(./image/pexels-alexgtacar-1592384.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+     grid-column: 1 / span 3;
+     grid-row: 5 / span 2;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car4:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car4 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car4 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car4 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car4  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car4 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.car5{
+    background-image: url(./image/pexels-lloyd-freeman-1429775.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     grid-column: 1 /span 3;
+     grid-row: 7 /span 1 ;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car5:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+.car5 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car5 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car5 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car5  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car5 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.car6{
+    background-image: url(./image/pexels-johnmark-smith-253096.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     grid-column: 1 / span 3 ;
+     grid-row: 8 / span 1;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car6:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car6 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car6 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car6 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car6  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car6 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.car7{
+    background-image: url(./image/pexels-jose-mueses-1280560.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / span 3 ;
+    grid-row: 9 / span 1;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car7:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car7 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car7 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car7 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car7  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car7 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.car8{
+    background-image: url(./image/pexels-prateek-katyal-2694389.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-column: 1 / span 3 ;
+     grid-row: 10 / span 1;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car8:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car8 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car8 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car8 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car8  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car8 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.car9{
+    background-image: url(./image/hincas\ car.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    grid-column: 1 / span 3 ;
+    grid-row: 11 / span 1;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car9:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car9 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car9 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car9 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car9  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car9 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.car10{
+    background-image: url(./image/pexels-jan-kopřiva-3399938.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    grid-column: 1 / span 3 ;
+    grid-row: 12 / span 2;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car10:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car10 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car10 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car10 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car10  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car10 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.car11{
+    background-image: url(./image/2\ olav-tvedt--oVaYMgBMbs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    grid-column: 1 / span 3 ;
+    grid-row: 14/ span 1;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car11:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car11 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car11 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car11 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car11  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car11 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.car12{
+    background-image: url(./image/2\ campbell-3ZUsNJhi_Ik-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    grid-column: 1 / span 3 ;
+    grid-row: 15/ span 1;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car12:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car12 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car12 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car12 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car12  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car12 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.car13{
+    background-image: url(./image/99-best-luxury-cars-2023-bmw-i7-lead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-column: 1 / span 3 ;
+    grid-row: 16/ span 1;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+}
+
+.car13:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car13 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car13 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car13 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car13  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car13 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.car14{
+    background-image: url(./image/2\ joey-banks-YApiWyp0lqo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 1 / span 3 ;
+    grid-row: 17/ span 1;
+     color: white;
+     margin: 0;   
+     filter: blur(7px); 
+     transition: 0.4s;
+    
+}
+
+.car14:hover{
+    transform: scale(1.05);
+    display:  block;
+    filter: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-weight: 700;
+  
+}  
+
+  
+
+
+.car14 span::before{
+   
+    content: "";
+    background-color: #fff;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.7s ease-out;
+} 
+.car14 span:hover::before{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.car14 span::after{
+ 
+    content: "";
+    background-color: #fff;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform-origin: 100% 0%;
+    transform: scale(0, 1);
+    transition: transform 0.7s ease-out;
+    
+}
+.car14  span:hover::after{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+ .car14 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.footer{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding-top: 3rem;
+    width: 100%;
+    height: 100%;
+    background-color: #222223;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr 1fr ;
+    width: 100%;
+     height: 62vh; 
+  
+}
+.footer-location {
+     color: white;
+     margin: 0;
+    padding-left: .5rem;
+     align-items: center;
+     font-size: 10px;
+     
+
+}
+.footer-location p{
+    text-align: left;
+    font-size: 10px;
+}
+.footer-location p a{
+    text-decoration: none;
+    color: white;
+
+}
+.footer-location p a:hover{
+    color:  red;
+}
+.footer-location .location{
+    line-height: 30px;
+}
+.footer-location .location address{
+    line-height: 20px;
+}
+.footer-location .location a{
+    color: #fff;
+    text-decoration: none;
+}   
+.footer-location .location a:hover{
+    color: red;
+}
+.footer-location .location h5{
+    margin: 0;
+}
+
+
+.footer-icon h3{
+   display: inline-block;
+   margin: 0 auto;
+   text-align: center;
+   color: white;
+   position: relative;
+   padding: 0;
+   font-size: 15px;
+   
+}
+.footer-icon h3::before{
+    content: "";
+    width: 100%;
+    background-color: red;
+    height: 2.5px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transform: scale(1, 1);
+    transition: transform 0.74s ease-out;
+}
+.footer-icon h3:hover::before{
+    transform: scale(0, 1);
+}
+.footer-icon h3:hover{
+    display: inline-block;
+    color: red;
+}
+
+.footer ul{
+    padding: 0;
+}
+.footer-icon li{
+    list-style-type: none;
+    float: right;
+    margin: 0 2rem 0 0;
+    padding: 0;
+    transition: 0.9s;
+   
+}
+.footer-icon li:hover{
+    transform: translateY(-10px);
+}
+
+.footer-icon li a {
+    color: white;
+    font-size: x-large;
+    transition: 0.9s;
+}
+.footer-icon li a:hover{
+    color: red;
+}
+.footer-company{
+    margin: 0;
+    padding: 1rem 0 0 2rem;
+    font-size: 10px;
+
+}
+.footer-company h3{
+    color: white;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    font-size: 15px;
+}
+.footer-company h3:hover{
+    color: red;
+}
+.footer-company h3::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    background-color:red;
+    height: 2px;
+  transform: scale(1, 1);
+  transition: transform 0.74s ease-out;
+}
+.footer-company h3:hover::before{
+    transform: scale(0, 1);
+}
+
+
+.footer-company ul{
+  margin-right: 4rem;
+      padding: 0;
+}
+
+.footer-company li{
+    list-style-type: none;
+   transition: 1s;
+}
+.footer-company li:hover{
+     transform: translateX(10px);
+}
+.footer-company li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+   
+}
+.footer-company li a:hover{
+    color: red;
+   
+    
+}
+
+.footer-get-help{
+    margin: 0;
+   
+    padding: 1rem .2rem 0 2rem;
+    font-size: 10px;
+
+}
+.footer-get-help h3{
+    color: white;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    font-size: 15px;
+}
+.footer-get-help h3:hover{
+    color: red;
+
+}
+.footer-get-help h3::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    background-color:red;
+    height: 2px;
+    transform: scale(1, 1);
+    transition: transform .74s ease-out;
+    
+}
+.footer-get-help h3:hover::before{
+    transform: scale(0, 1);
+   
+}
+   
+.footer-get-help ul{
+  margin-right: 1rem;
+      padding: 0;
+}
+
+.footer-get-help li{
+    list-style-type: none;
+    transition: 1s;
+   
+}
+.footer-get-help li:hover{
+   transform: translateX(10px);
+}
+.footer-get-help li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+   
+}
+.footer-get-help li a:hover{
+    color: red;
+    
+}
+.footer-copyright{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    color: #fff; 
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 10px;
+}
+
+.Hide_nav{
+    width: 170px;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 2.5rem;
+    display: none;
+    z-index: 99;
+}
+
+
+.Hide_nav ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.Hide_nav ul .nav-link{
+    width: 100%;
+    padding: .6rem 0;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+  transition: background-color 0.7s ease;
+}
+
+.Hide_nav ul .nav-link:hover{
+    background-color: red;  
+}
+.Hide_nav ul .active{
+    width: 100%;
+    background-color: red; 
+    display: block;
+    top: 0;
+} 
+.Hide_nav ul .nav-link i{
+    font-size: 20px;
+   margin: 0 1rem 0 .5rem;
+}
+.Hide_icon{
+ margin-left: 9rem;
+ display: block;
+ transition: all 2s  ease;
+
+}
+.bx-align-right{
+    display: block;
+    transition: all 2s  ease;
+}
+.Hide_icon .bx-x{
+    display: none;
+}
+}
