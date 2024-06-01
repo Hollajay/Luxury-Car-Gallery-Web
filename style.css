@@ -1769,7 +1769,7 @@ header img{
     border-radius: 25px;
    
     outline: none;
-    font-size: 10px;
+    font-size: 8px;
     background-color: red;
     color: white;
     transition: 0.7;
@@ -2935,6 +2935,11 @@ header img{
    font-size: 15px;
    
 }
+.footer-icon{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
 .footer-icon h3::before{
     content: "";
     width: 100%;
@@ -3106,9 +3111,9 @@ header img{
 }
 
 .Hide_nav{
-    width: 170px;
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 300px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
     position: absolute;
     right: 0;
     top: 2.5rem;
@@ -3148,7 +3153,8 @@ header img{
    margin: 0 1rem 0 .5rem;
 }
 .Hide_icon{
- margin-left: 9rem;
+ margin-left: 7rem;
+ margin-right: 1rem;
  display: block;
  transition: all 2s  ease;
 
@@ -3156,8 +3162,10 @@ header img{
 .bx-align-right{
     display: block;
     transition: all 2s  ease;
+    font-size: 20px;
 }
 .Hide_icon .bx-x{
     display: none;
+    font-size: 25px;
 }
 }
