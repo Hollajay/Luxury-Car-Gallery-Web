@@ -1,0 +1,29 @@
+if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').then(function(registration){console.log('SW :ServiceWorker registration successful with scope: ',registration.scope);registration.onupdatefound=()=>{const installingWorker=registration.installing;installingWorker.onstatechange=()=>{console.log('SW : In onstatechange ');switch(installingWorker.state){case 'installed':if(navigator.serviceWorker.controller){console.log('SW : sw.js new version found...reloading page')
+location.reload()}else{}
+break;}};};if(navigator.standalone||window.matchMedia('(display-mode: standalone)').matches){console.log('Thanks for using our PWA!')
+window.dataLayer=window.dataLayer||[];dataLayer.push({event:'PWAInUse',testField:"Accessing PWA"})}else{if(!app.loggedin){console.log('SW: Customer not logged in. Skip the further process.')
+return;}
+console.log('SW: Check if PWA installed')
+var isPWAInstalled=false;navigator.getInstalledRelatedApps().then(function(relatedApps){relatedApps.forEach((app)=>{if(app.platform=='webapp'&&app.url==window.origin+'/manifest.json'){console.log('SW: PWA is installed')
+isPWAInstalled=true;}});if(isPWAInstalled){console.log('SW: PWA already installed.')
+console.log('SW: No promotion required.')}
+else{console.log('SW: Please consider downloading our PWA.')
+showInstallPromotion()}})}},function(err){console.log('SW: ServiceWorker registration failed: ',err);});});}
+async function getInstalledRelatedApps(){var isPWAInstalled=false;var relatedApps=await navigator.getInstalledRelatedApps();relatedApps.forEach((app)=>{if(app.platform=='webapp'&&app.url==window.origin+'/manifest.json'){console.log('SW: PWA is installed')
+isPWAInstalled=true;}});if(isPWAInstalled){console.log('SW: PWA already installed.')
+console.log('SW: No promotion required.')}
+else{console.log('SW: Please consider downloading our PWA.')
+showInstallPromotion()}}
+function showInstallPrompt(){hideInstallPromotion();deferredPrompt.prompt();deferredPrompt.userChoice.then((choiceResult)=>{if(choiceResult.outcome==='accepted'){console.log('User accepted the install prompt');}
+else{console.log('User dismissed the install prompt');}});}
+function showInstallPromotion(){var mobileOS=getMobileOperatingSystem();var mobileOSTxt="Android's"
+if(mobileOS!='unknown'){$("#a2hs-popup").show();if(mobileOS=="Android"){mobileOSTxt="Android's";$("#a2hs-popup").addClass("android-modal");}
+else if(mobileOS=="iOS"){mobileOSTxt="iPhone's";$("#a2hs-popup").addClass("ios-modal");}
+$('#popup-title').html(langTranslateApp.ATHHeading)
+$('#ATHMessage1').html(langTranslateApp.ATHMessage1.replace('[device]',mobileOSTxt))
+$('#ATHMessage2').html(`${langTranslateApp.ATHMessage2} <span class="icon-add-to-screen"></span> ${langTranslateApp.ATHMessage3}.`)}}
+function getMobileOperatingSystem(){var userAgent=navigator.userAgent||navigator.vendor||window.opera;if(/windows phone/i.test(userAgent))return "Windows Phone";if(/android/i.test(userAgent))return "Android";if(['iPad Simulator','iPhone Simulator','iPod Simulator','iPad','iPhone','iPod'].includes(navigator.platform)||(navigator.userAgent.includes("Mac")&&"ontouchend"in document))
+return 'iOS'
+return "unknown";}
+function hideInstallPromotion(){$("#a2hs-popup").hide();}
+window.addEventListener("appinstalled",evt=>{console.log("appinstalled fired",evt);window.dataLayer=window.dataLayer||[];dataLayer.push({event:'PWAInstalled',testField:"PWA Installation Done"})});

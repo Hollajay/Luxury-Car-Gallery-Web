@@ -1,0 +1,14 @@
+/*background color for the class selector ,microphone*/
+img:hover{background-color: darkorange;
+
+}
+.musical{
+    background-color: brown;
+}
+.apple{
+    background-color: aqua;
+}
+/**********id selector**************/
+#heading{
+    color: red;
+}

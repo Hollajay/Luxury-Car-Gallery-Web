@@ -1,0 +1,418 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link type="text/css" href="https://d1azc1qln24ryf.cloudfront.net/128885/DStv-com/style.css?ufvrsa" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet" data-rh="true" />
+<link rel="apple-touch-icon" sizes="57x57" href="/content/images/favicons/dstv/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/content/images/favicons/dstv/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/content/images/favicons/dstv/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/content/images/favicons/dstv/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/content/images/favicons/dstv/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/content/images/favicons/dstv/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/content/images/favicons/dstv/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/content/images/favicons/dstv/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/content/images/favicons/dstv/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/content/images/favicons/dstv/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/content/images/favicons/dstv/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/content/images/favicons/dstv/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/content/images/favicons/dstv/favicon-16x16.png">
+<link rel="manifest" href="/content/images/favicons/dstv/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/content/images/favicons/dstv/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<script type="text/javascript">
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W8FVKBV');
+</script>
+<link href="/DependencyHandler.css?s=L2NvbnRlbnQvY3NzL3Jlc2lkZW50aWFsLXN0eWxlcy5jc3M7L2NvbnRlbnQvY3NzL2Nvb2tpZS1zdHlsZXMuY3NzOw&amp;t=Css&amp;cdv=202402087" type="text/css" rel="stylesheet" />
+<style>
+        body.initial-self-service-entry {
+            background-color: #0A121D;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+        }
+
+        .initial-self-service-entry .loader-holder {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        @keyframes initialSelfServiceEntrySpin {
+            from {
+                transform: rotate(0deg)
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .initial-self-service-entry .spin-loader {
+            text-align: center;
+        }
+
+            .initial-self-service-entry .spin-loader span {
+                margin-bottom: 20px;
+                border: 1px solid rgba(162, 182, 191, 0.4);
+                border-left-color: #fff;
+                border-bottom-color: #fff;
+                border-top-color: #fff;
+                -webkit-animation: initialSelfServiceEntrySpin 0.8s infinite linear;
+                animation: initialSelfServiceEntrySpin 0.8s infinite linear;
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                border-radius: 50%;
+                width: 84px;
+                height: 84px;
+            }
+
+        .initial-self-service-entry .support-blue span {
+            border-width: 2px 1px 2px 2px;
+            border-left-color: #0095da;
+            border-bottom-color: #0095da;
+            border-top-color: #0095da;
+        }
+    </style>
+<link rel="stylesheet" href="/content/self-service/styles.128846b891f4ca7a.css" />
+<link rel="stylesheet" href="/content/self-service/main.4e9e05f784e745b3.css" />
+<script src="https://sandboxcheckouttoolkit.rapyd.net"></script>
+<script>
+    var pagename = "";
+    var pagesection = "";
+    var pagetype = /Mobile/i.test(navigator.userAgent) ? "mobile web" : "desktop web";
+    var pathArray = window.location.pathname.split("/");
+    for (i = 0; i < pathArray.length; i++) {
+        if (i == 0 || i == pathArray.length) {
+            pagename = pathArray[i];
+        }
+        if (i > 0 && i < pathArray.length) {
+            if (i == 2) {
+                pagesection = pathArray[i];
+            }
+            if (pathArray[i] !== "") {
+                pagename += ":" + pathArray[i];
+            }
+        }
+    }
+
+    pagename = pagename.substr(1, pagename.length - 1);
+    var segmentId = localStorage.getItem("_Invidi") || "";
+
+    window.mcgDataLayer = window.mcgDataLayer || {};
+    window.mcgDataLayer = {
+        page: { // User variable
+            page_name: pagename,
+            page_section: pagesection,
+            page_type: "generic",
+            page_url: document.URL
+        },
+        user: { // User variable
+            user_id: "",
+            hashed_email: "",
+            connect_id: "",
+            segment_id: segmentId,
+            billing_id: "",
+            subscriber_type: "",
+            login_type: "guest"
+        },
+        article: { // Event
+            article_name: "",
+            article_category: "",
+            article_published_date: "",
+            article_id: ""
+        },
+        acquisition: { //User variable
+            campaign_name: "",
+            campaign_source: "",
+            campaign_medium: "",
+            campaign_content: "",
+            campaign_term: "",
+            business_unit: "",
+            referral_url: ""
+        },
+        interaction: { //Event
+            component_name: '',
+            component_type: "",
+            category: "",
+            location: "",
+            target_page_url: ""
+        },
+        search: { //?? To investigate attribute
+            search_type: "global search",
+            filter_term: "",
+            search_term: "",
+            num_search_results: "",
+            search_count: ""
+        },
+        content: {
+            content_type: "general page",
+            content_title: "",
+            content_tag: "",
+            content_category: ""
+        },
+        ecommerce: { // Event
+            event: "",
+            products: []
+        },
+        platform: { // User variables
+            platform_name: "uni-web",
+            platform_type: pagetype,
+            platform_language: "en",
+            country_code: "ng"
+        },
+        error: { // User
+            error_code: "",
+            error_type: "",
+            error_message: "",
+            error_count: ""
+        }
+    };
+</script>
+<script src="/content/js/user-persistence.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.href.includes("campaign/")) {
+            const links = document.querySelectorAll('a'),
+                domainsToDecorate =  "dstv.co.za".split(','),
+                queryParams = [
+                    'utm_medium',
+                    'utm_source',
+                    'utm_campaign',
+                    'utm_term',
+                    'utm_content',
+                    'utm_id'
+                ];
+
+            for (var linkIndex = 0; linkIndex < links.length; linkIndex++) {
+                for (var domainIndex = 0; domainIndex < domainsToDecorate.length; domainIndex++) {
+                    if (links[linkIndex].href.indexOf(domainsToDecorate[domainIndex]) > -1) {
+                        links[linkIndex].href = decorateUrl(links[linkIndex].href);
+                    }
+                }
+            }
+
+            function decorateUrl(urlToDecorate) {
+                var collectedQueryParams = [];
+                for (var queryIndex = 0; queryIndex < queryParams.length; queryIndex++) {
+                    if (getQueryParam(queryParams[queryIndex])) {
+                        collectedQueryParams.push(queryParams[queryIndex] + '=' + getQueryParam(queryParams[queryIndex]))
+                    }
+
+                }
+
+                var urlParts = urlToDecorate.split('#');
+                urlToDecorate = collectedQueryParams.length ? (urlParts[0].indexOf('?') === -1) ? urlParts[0] + '?' : urlParts[0] + '&' : urlToDecorate;
+                return collectedQueryParams.length ? ((urlToDecorate + collectedQueryParams.join('&')) + ((urlParts.length > 1) ? '#' + urlParts[1] : '')) : urlToDecorate;
+            }
+
+            function getQueryParam(name) {
+                if (name = (new RegExp('[?&]' + encodeURIComponent(name) + '=([^&]*)')).exec(window.location.search)) {
+                    return decodeURIComponent(name[1]);
+                }
+            }
+        }
+    });
+</script>
+</head>
+<body class="initial-self-service-entry">
+<div id="self-service-app-root">
+<div class="d-flex justify-content-center loader-holder">
+<div class="spin-loader support-blue">
+<span class></span>
+</div>
+</div>
+<noscript>
+            <p>Please enable JavaScript to use this page.</p>
+        </noscript>
+</div>
+<footer id="footer" class="footer-new overflow-hidden">
+<div class="container">
+<div class="footer-bottom">
+<div class="nav-holder">
+<img data-src="/media/o0ml0ujx/img02.svg" loading="lazy" class="lozad footer-logo" alt="DStv" width="125" height="75">
+<div class="nav-block">
+<nav>
+<ul class="footer-nav">
+<li>
+<a href="https://www.multichoiceafrica.com/country/nigeria/" data-component-name="footer_legal_links_click" data-component-info="{
+  &quot;component_name&quot;: &quot;footer_legal_links_click&quot;,
+  &quot;component_type&quot;: &quot;links&quot;,
+  &quot;nav_location&quot;: &quot;footer&quot;,
+  &quot;nav_item&quot;: &quot;legal-link-clicks&quot;,
+  &quot;nav_text&quot;: &quot;multichoice_website&quot;,
+  &quot;current_page_url&quot;: &quot;https://www.dstv.com/en-ng/mydstv&quot;,
+  &quot;target_page_url&quot;: &quot;https://www.multichoiceafrica.com/country/nigeria/&quot;
+}" target="_blank" alt="MultiChoice Website">MultiChoice Website</a>
+</li>
+<li>
+<a href="/media/t51mia43/terms-of-use-2018.pdf" data-component-name="footer_legal_links_click" data-component-info="{
+  &quot;component_name&quot;: &quot;footer_legal_links_click&quot;,
+  &quot;component_type&quot;: &quot;links&quot;,
+  &quot;nav_location&quot;: &quot;footer&quot;,
+  &quot;nav_item&quot;: &quot;legal-link-clicks&quot;,
+  &quot;nav_text&quot;: &quot;terms_of_use&quot;,
+  &quot;current_page_url&quot;: &quot;https://www.dstv.com/en-ng/mydstv&quot;,
+  &quot;target_page_url&quot;: &quot;/media/t51mia43/terms-of-use-2018.pdf&quot;
+}" target="_blank" alt="Terms of Use">Terms of Use</a>
+</li>
+<li>
+<a href="https://www.multichoice.com/privacy-cookie-notice/" data-component-name="footer_legal_links_click" data-component-info="{
+  &quot;component_name&quot;: &quot;footer_legal_links_click&quot;,
+  &quot;component_type&quot;: &quot;links&quot;,
+  &quot;nav_location&quot;: &quot;footer&quot;,
+  &quot;nav_item&quot;: &quot;legal-link-clicks&quot;,
+  &quot;nav_text&quot;: &quot;privacy_&amp;_cookie_notice&quot;,
+  &quot;current_page_url&quot;: &quot;https://www.dstv.com/en-ng/mydstv&quot;,
+  &quot;target_page_url&quot;: &quot;https://www.multichoice.com/privacy-cookie-notice/&quot;
+}" target="_blank" alt="Privacy &amp; Cookie Notice">Privacy &amp; Cookie Notice</a>
+</li>
+<li>
+<a href="https://www.multichoice.com/responsible-disclosure-policy/" data-component-name="footer_legal_links_click" data-component-info="{
+  &quot;component_name&quot;: &quot;footer_legal_links_click&quot;,
+  &quot;component_type&quot;: &quot;links&quot;,
+  &quot;nav_location&quot;: &quot;footer&quot;,
+  &quot;nav_item&quot;: &quot;legal-link-clicks&quot;,
+  &quot;nav_text&quot;: &quot;responsible_disclosure_policy&quot;,
+  &quot;current_page_url&quot;: &quot;https://www.dstv.com/en-ng/mydstv&quot;,
+  &quot;target_page_url&quot;: &quot;https://www.multichoice.com/responsible-disclosure-policy/&quot;
+}" target="_blank" alt="Responsible Disclosure Policy">Responsible Disclosure Policy</a>
+</li>
+<li>
+<a href="/en-ng/legal/copyright" data-component-name="footer_legal_links_click" data-component-info="{
+  &quot;component_name&quot;: &quot;footer_legal_links_click&quot;,
+  &quot;component_type&quot;: &quot;links&quot;,
+  &quot;nav_location&quot;: &quot;footer&quot;,
+  &quot;nav_item&quot;: &quot;legal-link-clicks&quot;,
+  &quot;nav_text&quot;: &quot;copyright&quot;,
+  &quot;current_page_url&quot;: &quot;https://www.dstv.com/en-ng/mydstv&quot;,
+  &quot;target_page_url&quot;: &quot;/en-ng/legal/copyright&quot;
+}" target alt="Copyright">Copyright</a>
+</li>
+<li>
+<a href="https://hrfocus.multichoice.com/Careers/" data-component-name="footer_legal_links_click" data-component-info="{
+  &quot;component_name&quot;: &quot;footer_legal_links_click&quot;,
+  &quot;component_type&quot;: &quot;links&quot;,
+  &quot;nav_location&quot;: &quot;footer&quot;,
+  &quot;nav_item&quot;: &quot;legal-link-clicks&quot;,
+  &quot;nav_text&quot;: &quot;careers&quot;,
+  &quot;current_page_url&quot;: &quot;https://www.dstv.com/en-ng/mydstv&quot;,
+  &quot;target_page_url&quot;: &quot;https://hrfocus.multichoice.com/careers/&quot;
+}" target="_blank" alt="Careers">Careers</a>
+</li>
+<li>
+
+<a href="javascript:void(0)" class="ot-sdk-show-settings">Manage Cookies</a>
+
+</li>
+</ul>
+</nav>
+<div class="copy">
+<p class="mb-2">&#169; 2022 MultiChoice Africa Holdings BV. All rights reserved</p>
+</div>
+</div>
+</div>
+<ul class="social-media d-flex flex-row justify-content-center">
+<li>
+<a href="https://www.facebook.com/dstvng" data-component-name="footer_social_icons_click" data-component-info="{
+  &quot;component_name&quot;: &quot;footer_social_icons_click&quot;,
+  &quot;component_type&quot;: &quot;links&quot;,
+  &quot;nav_location&quot;: &quot;footer&quot;,
+  &quot;nav_item&quot;: &quot;social_icon_clicks&quot;,
+  &quot;nav_text&quot;: &quot;facebook&quot;,
+  &quot;current_page_url&quot;: &quot;https://www.dstv.com/en-ng/mydstv&quot;,
+  &quot;target_page_url&quot;: &quot;https://www.facebook.com/dstvng&quot;
+}" target="_blank" alt="Facebook" class="icon-Facebook">
+<span class="sr-only">Facebook</span>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/dstvng" data-component-name="footer_social_icons_click" data-component-info="{
+  &quot;component_name&quot;: &quot;footer_social_icons_click&quot;,
+  &quot;component_type&quot;: &quot;links&quot;,
+  &quot;nav_location&quot;: &quot;footer&quot;,
+  &quot;nav_item&quot;: &quot;social_icon_clicks&quot;,
+  &quot;nav_text&quot;: &quot;twitter&quot;,
+  &quot;current_page_url&quot;: &quot;https://www.dstv.com/en-ng/mydstv&quot;,
+  &quot;target_page_url&quot;: &quot;https://twitter.com/dstvng&quot;
+}" target="_blank" alt="Twitter" class="icon-Twitter">
+<span class="sr-only">Twitter</span>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/dstvnigeria/" data-component-name="footer_social_icons_click" data-component-info="{
+  &quot;component_name&quot;: &quot;footer_social_icons_click&quot;,
+  &quot;component_type&quot;: &quot;links&quot;,
+  &quot;nav_location&quot;: &quot;footer&quot;,
+  &quot;nav_item&quot;: &quot;social_icon_clicks&quot;,
+  &quot;nav_text&quot;: &quot;instagram&quot;,
+  &quot;current_page_url&quot;: &quot;https://www.dstv.com/en-ng/mydstv&quot;,
+  &quot;target_page_url&quot;: &quot;https://www.instagram.com/dstvnigeria/&quot;
+}" target="_blank" alt="Instagram" class="icon-instagram">
+<span class="sr-only">Instagram</span>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UCgZxC68nlE2eadciV3kCqIg" data-component-name="footer_social_icons_click" data-component-info="{
+  &quot;component_name&quot;: &quot;footer_social_icons_click&quot;,
+  &quot;component_type&quot;: &quot;links&quot;,
+  &quot;nav_location&quot;: &quot;footer&quot;,
+  &quot;nav_item&quot;: &quot;social_icon_clicks&quot;,
+  &quot;nav_text&quot;: &quot;youtube&quot;,
+  &quot;current_page_url&quot;: &quot;https://www.dstv.com/en-ng/mydstv&quot;,
+  &quot;target_page_url&quot;: &quot;https://www.youtube.com/channel/ucgzxc68nle2eadciv3kcqig&quot;
+}" target="_blank" alt="YouTube" class="icon-YouTube">
+<span class="sr-only">YouTube</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+<script src="/content/self-service/runtime.6d10d431183110ce.js?v=d58ec499b37fdd2f02dbac8b135ee070" type="module"></script>
+<script src="/content/self-service/polyfills.0ecf995609bbf43b.js?v=2cc2ef422d6afdb4e02494a3027ffb99" type="module"></script>
+<script src="/content/self-service/main.c95217aae2b3f6ea.js?v=6043f4461c2b3cb2b00703b881fd519e" type="module"></script>
+<script src="/DependencyHandler.js?s=L2NvbnRlbnQvanMvbG96YWQubWluLmpzOw&amp;t=Javascript&amp;cdv=202402087" defer="True" type="text/javascript"></script>
+<script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            var observer = lozad('.lozad'); // lazy loads elements with default selector as '.lozad'
+            observer.observe();
+        })
+    </script>
+<script charset="UTF-8" type="text/javascript">
+        window["adrum-start-time"] = new Date().getTime();
+
+        (function (config) {
+            config.appKey = "DSTV.Unification.Web.ViewModels.PageViewModel`1[Umbraco.Web.PublishedModels.SelfServiceResidential]"; // EC-AAB-RDY
+            config.adrumExtUrlHttp = "http://cdn.appdynamics.com";
+            config.adrumExtUrlHttps = "https://cdn.appdynamics.com";
+            config.beaconUrlHttp = "http://fra-col.eum-appdynamics.com";
+            config.beaconUrlHttps = "https://fra-col.eum-appdynamics.com";
+            config.resTiming = { "bufSize": 200, "clearResTimingOnBeaconSend": true };
+            config.maxUrlLength = 512;
+            config.spa = {"spa2":{"vp":{"exclude":[{"urls":[{"pattern":".*"}]}]}, "clearResTiming":true}};
+        })(window["adrum-config"] || (window["adrum-config"] = {}));
+    </script>
+<script src="//cdn.appdynamics.com/adrum/adrum-21.7.0.3493.js"></script>
+<script>!function (e) { function t(t) { for (var n, a, i = t[0], c = t[1], l = t[2], p = 0, s = []; p < i.length; p++)a = i[p], Object.prototype.hasOwnProperty.call(o, a) && o[a] && s.push(o[a][0]), o[a] = 0; for (n in c) Object.prototype.hasOwnProperty.call(c, n) && (e[n] = c[n]); for (f && f(t); s.length;)s.shift()(); return u.push.apply(u, l || []), r() } function r() { for (var e, t = 0; t < u.length; t++) { for (var r = u[t], n = !0, i = 1; i < r.length; i++) { var c = r[i]; 0 !== o[c] && (n = !1) } n && (u.splice(t--, 1), e = a(a.s = r[0])) } return e } var n = {}, o = { 1: 0 }, u = []; function a(t) { if (n[t]) return n[t].exports; var r = n[t] = { i: t, l: !1, exports: {} }; return e[t].call(r.exports, r, r.exports, a), r.l = !0, r.exports } a.e = function (e) { var t = [], r = o[e]; if (0 !== r) if (r) t.push(r[2]); else { var n = new Promise((function (t, n) { r = o[e] = [t, n] })); t.push(r[2] = n); var u, i = document.createElement("script"); i.charset = "utf-8", i.timeout = 120, a.nc && i.setAttribute("nonce", a.nc), i.src = function (e) { return a.p + "static/js/" + ({}[e] || e) + "." + { 3: "3a7548f9" }[e] + ".chunk.js" }(e); var c = new Error; u = function (t) { i.onerror = i.onload = null, clearTimeout(l); var r = o[e]; if (0 !== r) { if (r) { var n = t && ("load" === t.type ? "missing" : t.type), u = t && t.target && t.target.src; c.message = "Loading chunk " + e + " failed.\n(" + n + ": " + u + ")", c.name = "ChunkLoadError", c.type = n, c.request = u, r[1](c) } o[e] = void 0 } }; var l = setTimeout((function () { u({ type: "timeout", target: i }) }), 12e4); i.onerror = i.onload = u, document.head.appendChild(i) } return Promise.all(t) }, a.m = e, a.c = n, a.d = function (e, t, r) { a.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r }) }, a.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, a.t = function (e, t) { if (1 & t && (e = a(e)), 8 & t) return e; if (4 & t && "object" == typeof e && e && e.__esModule) return e; var r = Object.create(null); if (a.r(r), Object.defineProperty(r, "default", { enumerable: !0, value: e }), 2 & t && "string" != typeof e) for (var n in e) a.d(r, n, function (t) { return e[t] }.bind(null, n)); return r }, a.n = function (e) { var t = e && e.__esModule ? function () { return e.default } : function () { return e }; return a.d(t, "a", t), t }, a.o = function (e, t) { return Object.prototype.hasOwnProperty.call(e, t) }, a.p = "./", a.oe = function (e) { throw console.error(e), e }; var i = this["webpackJsonpdstv-react-app"] = this["webpackJsonpdstv-react-app"] || [], c = i.push.bind(i); i.push = t, i = i.slice(); for (var l = 0; l < i.length; l++)t(i[l]); var f = c; r() }([])</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"853723ab689f5351","version":"2024.2.0","token":"bc3d6f21e7a9476babd272469e9caaff"}' crossorigin="anonymous"></script>
+</body>
+</html>
